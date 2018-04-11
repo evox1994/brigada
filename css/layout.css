@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+html,
+body {
+	position: relative;
+}
+body {
+	min-width: 300px;
+	text-align: center;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+label.error {
+	display: none !important;
+}
+input.error,textarea.error {
+	border: 1px solid #F00 !important;
+	box-shadow: 0 0px 0px 1px #F00;
+}
+.fancybox-inner {
+	overflow: visible !important;
+}
+.b {
+	position: relative;
+}
+.b-block{
+	position: relative;
+	max-width: 1230px;
+	margin: 0px auto;
+	padding: 0 30px;
+}
+input::-webkit-input-placeholder {
+	color: #434343;
+}
+input:-moz-placeholder {
+	color: #434343;
+}
+.b-icon{
+	position: relative;
+}
+button:hover {
+	cursor: pointer;
+}
+
+.main-caption {
+	display: block;
+	font-size: 42px;
+}
+.second-caption {
+	display: block;
+	font-size: 32px;
+}
+
+
+
+.header {
+	background-color: #ffffff;
+	width: 100%;
+}
+.header .b-block {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.header-logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.header-logo a {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.header-logo .logo-text {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 15px;
+	color: #000000;
+	line-height: 1.2;
+	text-align: left;
+}
+.header-contacts {
+	display: inline-block;
+	vertical-align: middle;
+}
+.header-image {
+	display: inline-block;
+	vertical-align: top;
+}
+.header-contacts-text {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	color: #000000;
+	line-height: 1.2;
+}
+.header-contacts-text input {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid rgb(215, 215, 215);
+	border-radius: 7px;
+	text-align: center;
+	width: 150px;
+	padding: 12px 0;
+	font-size: 16px;
+	color: #000000;
+}
+.header-contacts-text input::-webkit-input-placeholder {color: rgb(154, 154, 154);}
+.header-contacts-text input::-moz-placeholder          {color: rgb(154, 154, 154);}/* Firefox 19+ */
+.header-contacts-text input:-moz-placeholder           {color: rgb(154, 154, 154);}/* Firefox 18- */
+.header-contacts-text input:-ms-input-placeholder      {color: rgb(154, 154, 154);}
+.header-contacts-text input:focus::-webkit-input-placeholder {color:transparent;}
+.header-contacts-text input:focus::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+.header-contacts-text input:focus:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+.header-contacts-text input:focus:-ms-input-placeholder      {color:transparent;}
+.header-contacts-text button {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	color: #ffffff;
+	width: 150px;
+	background-color: rgb(24, 99, 0);
+	border-radius: 7px;
+	border: 0;
+	padding: 10px 0;
+}
+.header-phone {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20px;
+}
+.header-phone a {
+	display: block;
+	color: #000000;
+}
+
+.header-nav {
+	position: absolute;
+	z-index: 100;
+	background-color: rgb(244, 244, 244);
+	width: 100%;
+	top: 90px;
+	left: 0;
+	text-align: left;
+}
+.header-nav ul li {
+	display: inline-block;
+	vertical-align: middle;
+}
+.header-nav ul li a {
+	display: block;
+	font-size: 18px;
+	color: #000000;
+	text-decoration: underline;
+	padding: 10px 0;
+}
+.header-nav ul li a:hover {
+	text-decoration: none;
+}
+.header-nav .nav-btn {
+	display: block;
+	padding: 10px 15px;
+	color: #ffffff;
+	font-size: 18px;
+	background-color: rgb(255, 199, 61);
+}
+
+.footer .b-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.footer-logo {
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-logo .logo-a {
+	display: block;
+	margin-bottom: 15px;
+}
+.footer-logo .logo-a img {
+	display: block;
+}
+.footer-logo .logo-text {
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: rgb(110, 110, 110);
+}
+.footer-logo ul li {
+	display: block;
+	text-align: left;
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: rgb(110, 110, 110);
+}
+.footer-logo ul li a {
+	color: rgb(110, 110, 110);
+}
+.footer-logo ul li a:hover {
+	text-decoration: underline;
+}
+.footer-nav-list {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.footer-nav-list li {
+	display: block;
+	margin-bottom: 10px;
+}
+.footer-nav-list li a {
+	font-size: 16px;
+	color: #000000;
+}
+.footer-nav-list li a:hover {
+	text-decoration: underline;
+}
+.footer-list-1 {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.footer-list-1 li {
+	display: block;
+	margin-bottom: 10px;
+}
+.footer-list-1 li a {
+	font-size: 16px;
+	color: #000000;
+}
+.footer-list-1 li a:hover {
+	text-decoration: underline;
+}
+.footer-list-2 {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.footer-list-2 li {
+	display: block;
+	margin-bottom: 10px;
+}
+.footer-list-2 li a {
+	font-size: 16px;
+	color: #000000;
+}
+.footer-list-2 li a:hover {
+	text-decoration: underline;
+}
+.footer-list-2 li .list-a {
+	display: block;
+	background-color: rgb(255, 200, 80);
+	color: #ffffff;
+	padding: 5px;
+	text-align: center;
+	border-radius: 7px;
+}
+.footer-list-2 li .list-a:hover {
+	text-decoration: none;
+}
+.footer-atk-logo {
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+}
+.footer-atk-logo .atk-logo-a {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 18px;
+}
+.footer-atk-logo .atk-logo-a img {
+	display: block;
+	margin-bottom: 9px;
+}
+.footer-atk-logo .atk-logo-a p {
+	display: block;
+	text-align: left;
+	font-size: 12px;
+	color: rgb(181, 181, 181);
+}
+.footer-atk-logo .social-list li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 3px;
+}
+
+
+
+
+
+
+
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+}	
+@media screen and (max-width: 1279px){
+	.b-block {
+		padding: 0 10px;
+		max-width: 720px;
+	}
+	.header-logo {
+		margin-bottom: 20px;
+	}
+	.header-nav {
+		top: 152px;
+	}
+}
+@media screen and (max-width: 767px){
+	.header-logo, .header-contacts, .header-nav {
+		display: none;
+	}
+	.footer-logo, .footer-nav-list, .footer-list-1, .footer-list-2, .footer-atk-logo {
+		display: block;
+		margin: 0 auto 20px;
+		max-width: 250px;
+		width: 100%;
+	}
+}
