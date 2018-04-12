@@ -1,5 +1,79 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'UniSans-Bold';
+    src: url('../fonts/uni_sans_bold-webfont.eot');
+    src: url('../fonts/uni_sans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/uni_sans_bold-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_bold-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_bold-webfont.ttf') format('truetype'),
+         url('../fonts/uni_sans_bold-webfont.svg#unisansboldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniSans-SemiBold';
+    src: url('../fonts/uni_sans_semibold-webfont.eot');
+    src: url('../fonts/uni_sans_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/uni_sans_semibold-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_semibold-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_semibold-webfont.ttf') format('truetype'),
+         url('../fonts/uni_sans_semibold-webfont.svg#unisanssemiboldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniSans-Light';
+    src: url('../fonts/uni_sans_light-webfont.eot');
+    src: url('../fonts/uni_sans_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/uni_sans_light-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_light-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_light-webfont.ttf') format('truetype'),
+         url('../fonts/uni_sans_light-webfont.svg#unisanslightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniSans-Heavy';
+    src: url('../fonts/uni_sans_heavy-webfont.eot');
+    src: url('../fonts/uni_sans_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/uni_sans_heavy-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_heavy-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_heavy-webfont.ttf') format('truetype'),
+         url('../fonts/uni_sans_heavy-webfont.svg#unisansheavybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniSans-Book';
+    src: url('../fonts/uni_sans_book-webfont.eot');
+    src: url('../fonts/uni_sans_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/uni_sans_book-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_book-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_book-webfont.ttf') format('truetype'),
+         url('../fonts/uni_sans_book-webfont.svg#unisansbookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniSans-Regular';
+    src: url('../fonts/uni_sans-webfont.eot');
+    src: url('../fonts/uni_sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/uni_sans-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans-webfont.woff') format('woff'),
+         url('../fonts/uni_sans-webfont.ttf') format('truetype'),
+         url('../fonts/uni_sans-webfont.svg#unisansregularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 html,
 body {
 	position: relative;
@@ -9,6 +83,7 @@ body {
 	text-align: center;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
+	font-family: 'UniSans-Light';
 }
 a {
 	text-decoration: none;
@@ -54,10 +129,12 @@ button:hover {
 .main-caption {
 	display: block;
 	font-size: 42px;
+	font-family: 'UniSans-Bold';
 }
 .second-caption {
 	display: block;
 	font-size: 32px;
+	font-family: 'UniSans-Bold';
 }
 
 
@@ -90,6 +167,7 @@ button:hover {
 .header-contacts {
 	display: inline-block;
 	vertical-align: middle;
+	margin: 0 140px 0 100px;
 }
 .header-image {
 	display: inline-block;
@@ -136,6 +214,7 @@ button:hover {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 20px;
+	font-family: 'UniSans-Bold';
 }
 .header-phone a {
 	display: block;
@@ -154,6 +233,7 @@ button:hover {
 .header-nav ul li {
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 120px;
 }
 .header-nav ul li a {
 	display: block;
@@ -171,8 +251,12 @@ button:hover {
 	color: #ffffff;
 	font-size: 18px;
 	background-color: rgb(255, 199, 61);
+	font-family: 'UniSans-Regular';
 }
 
+.footer {
+	border-top: 1px solid rgb(235, 235, 235);
+}
 .footer .b-block {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -180,6 +264,7 @@ button:hover {
 .footer-logo {
 	display: inline-block;
 	vertical-align: top;
+	margin-right: 45px;
 }
 .footer-logo .logo-a {
 	display: block;
@@ -211,6 +296,7 @@ button:hover {
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
+	margin: 0 45px;
 }
 .footer-nav-list li {
 	display: block;
@@ -219,6 +305,7 @@ button:hover {
 .footer-nav-list li a {
 	font-size: 16px;
 	color: #000000;
+	font-family: 'UniSans-Regular';
 }
 .footer-nav-list li a:hover {
 	text-decoration: underline;
@@ -227,6 +314,7 @@ button:hover {
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
+	margin: 0 45px;
 }
 .footer-list-1 li {
 	display: block;
@@ -235,6 +323,7 @@ button:hover {
 .footer-list-1 li a {
 	font-size: 16px;
 	color: #000000;
+	font-family: 'UniSans-Regular';
 }
 .footer-list-1 li a:hover {
 	text-decoration: underline;
@@ -243,6 +332,7 @@ button:hover {
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
+	margin: 0 45px;
 }
 .footer-list-2 li {
 	display: block;
@@ -251,6 +341,7 @@ button:hover {
 .footer-list-2 li a {
 	font-size: 16px;
 	color: #000000;
+	font-family: 'UniSans-Regular';
 }
 .footer-list-2 li a:hover {
 	text-decoration: underline;
@@ -270,6 +361,7 @@ button:hover {
 	display: inline-block;
 	vertical-align: top;
 	text-align: right;
+	margin-left: 45px;
 }
 .footer-atk-logo .atk-logo-a {
 	display: inline-block;
@@ -306,21 +398,27 @@ button:hover {
 		padding: 0 10px;
 		max-width: 720px;
 	}
-	.header-logo {
-		margin-bottom: 20px;
+	.header-logo .logo-text {
+		display: none;
 	}
 	.header-nav {
-		top: 152px;
+		top: 90px;
 	}
-}
-@media screen and (max-width: 767px){
-	.header-logo, .header-contacts, .header-nav {
-		display: none;
+	.header-contacts {
+		margin: 0 20px 0 0;
+	}
+	.header-nav ul li {
+		margin-right: 20px;
 	}
 	.footer-logo, .footer-nav-list, .footer-list-1, .footer-list-2, .footer-atk-logo {
 		display: block;
 		margin: 0 auto 20px;
 		max-width: 250px;
 		width: 100%;
+	}
+}
+@media screen and (max-width: 767px){
+	.header-logo, .header-contacts, .header-nav {
+		display: none;
 	}
 }
