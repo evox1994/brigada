@@ -1,0 +1,66 @@
+.b-1 {
+	color: #000000;
+}
+.b-1 .b-block {
+	padding-top: 60px;
+}
+.contacts-list {
+	text-align: center;
+	margin-top: 50px;
+}
+.contacts-list li {
+	display: inline-block;
+	vertical-align: middle;
+}
+.contacts-list li:nth-child(3n+2) {
+	margin: 0 109px;
+}
+.contacts-list li img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 20px;
+}
+.contacts-list li .li-text {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'UniSans-Bold';
+	font-size: 25px;
+	line-height: 1.2;
+	color: rgb(169, 169, 169);
+	text-align: left;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+.contacts-list li .li-text a {
+	color: rgb(169, 169, 169);
+}
+.contacts-map {
+	width: 100%;
+	height: 400px;
+	margin-top: 20px;
+}
+.contacts-map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+	.contacts-list li {
+		display: block;
+		margin-bottom: 40px;
+	}
+	.contacts-list li:nth-child(3n+2) {
+		margin: 0 auto 40px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.contacts-list li img {
+		display: block;
+		margin: 0 auto 20px;
+	}
+	.contacts-list li .li-text {
+		display: block;
+		margin: 0 auto 20px;
+		text-align: center;
+	}
+}
