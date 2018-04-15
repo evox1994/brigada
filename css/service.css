@@ -2,6 +2,7 @@
 	background-image: url("../i/service-back.jpg");
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	color: #ffffff;
 }
 .b-1 .b-block {
@@ -59,9 +60,19 @@
 	font-size: 16px;
 	color: #000000;
 	overflow-y: auto;
-	border: 0;
+	border: 1px solid transparent;
 	margin-bottom: 6px;
 	font-family: 'UniSans-Light';
+	position: relative;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-submit textarea:focus, .b-1-submit textarea:hover {
+	border: 1px solid rgb(24, 99, 0);
 }
 .b-1-submit textarea::-webkit-input-placeholder {color: #000000;}
 .b-1-submit textarea::-moz-placeholder          {color: #000000;}/* Firefox 19+ */
@@ -78,11 +89,21 @@
 	width: 100%;
 	border-radius: 3px;
 	margin-bottom: 6px;
-	border: 0;
+	border: 1px solid transparent;
 	text-align: center;
 	font-size: 16px;
 	color: #000000;
 	font-family: 'UniSans-Light';
+	position: relative;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-submit input:focus, .b-1-submit input:hover {
+	border: 1px solid rgb(24, 99, 0);
 }
 .b-1-submit input::-webkit-input-placeholder {color: #000000;}
 .b-1-submit input::-moz-placeholder          {color: #000000;}/* Firefox 19+ */
@@ -103,6 +124,14 @@
 	background-color: rgb(255, 199, 61);
 	margin-bottom: 8px;
 	font-family: 'UniSans-SemiBold';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-submit button:hover {
+	background-color: #fdce5c;
 }
 .b-1-submit .button-text {
 	font-size: 10px;
@@ -141,8 +170,22 @@
 	transition: all 0.5s;
 	border-radius: 7px;
 }
+.b-2-list li::before {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
 .b-2-list li:hover {
 	background-color: rgb(236, 245, 233);
+}
+.b-2-list li:hover:before {
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 .b-2-list .list-caption {
 	display: inline-block;
@@ -169,6 +212,9 @@
 	font-size: 20px;
 	text-align: center;
 	color: #ffffff;
+}
+.b-2-list li a:hover {
+	background-color: #fdce5c;
 }
 .b-2-list .list-item-1::before {
 	content: '';
@@ -367,6 +413,7 @@
 	background-image: url("../i/b-4-back.jpg");
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	color: #ffffff;
 }
 .b-4 .b-block {
@@ -408,9 +455,19 @@
 	font-size: 16px;
 	color: #000000;
 	overflow-y: auto;
-	border: 0;
+	border: 1px solid transparent;
 	margin-bottom: 6px;
 	font-family: 'UniSans-Light';
+	position: relative;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4-submit textarea:focus, .b-4-submit textarea:hover {
+	border: 1px solid rgb(24, 99, 0);
 }
 .b-4-submit textarea::-webkit-input-placeholder {color: #000000;}
 .b-4-submit textarea::-moz-placeholder          {color: #000000;}/* Firefox 19+ */
@@ -427,11 +484,21 @@
 	width: 100%;
 	border-radius: 3px;
 	margin-bottom: 6px;
-	border: 0;
+	border: 1px solid transparent;
 	text-align: center;
 	font-size: 16px;
 	color: #000000;
 	font-family: 'UniSans-Light';
+	position: relative;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4-submit input:focus, .b-4-submit input:hover {
+	border: 1px solid rgb(24, 99, 0);
 }
 .b-4-submit input::-webkit-input-placeholder {color: #000000;}
 .b-4-submit input::-moz-placeholder          {color: #000000;}/* Firefox 19+ */
@@ -452,6 +519,11 @@
 	background-color: rgb(24, 99, 0);
 	margin-bottom: 8px;
 	font-family: 'UniSans-SemiBold';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-4-submit .button-text {
 	font-size: 10px;

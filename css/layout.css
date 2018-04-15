@@ -137,6 +137,247 @@ button:hover {
 	font-family: 'UniSans-Bold';
 }
 
+.btn-anim {
+	position: relative;
+}
+.btn-anim span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    -webkit-animation: move 6s steps(1, end) infinite normal;
+    -moz-animation: move 6s steps(1, end) infinite normal;
+    -ms-animation: move 6s steps(1, end) infinite normal;
+    -o-animation: move 6s steps(1, end) infinite normal;
+    animation: move 6s steps(1, end) infinite normal;
+}
+.btn-anim span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: pulse 1s linear infinite normal;
+    -moz-animation: pulse 1s linear infinite normal;
+    -ms-animation: pulse 1s linear infinite normal;
+    -o-animation: pulse 1s linear infinite normal;
+    animation: pulse 1s linear infinite normal;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@-ms-keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@-o-keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 10%;
+    top: 5%;
+  }
+  16% {
+    left: 70%;
+    top: 50%;
+  }
+  33% {
+    left: 25%;
+    top: 64%;
+  }
+  49% {
+    left: 35%;
+    top: 13%;
+  }
+  66% {
+    left: 87%;
+    top: 40%;
+  }
+  82% {
+    left: 58%;
+    top: 70%;
+  }
+}
+@-moz-keyframes move {
+  0% {
+    left: 10%;
+    top: 5%;
+  }
+  16% {
+    left: 70%;
+    top: 50%;
+  }
+  33% {
+    left: 25%;
+    top: 64%;
+  }
+  49% {
+    left: 35%;
+    top: 13%;
+  }
+  66% {
+    left: 87%;
+    top: 40%;
+  }
+  82% {
+    left: 58%;
+    top: 70%;
+  }
+}
+@-ms-keyframes move {
+  0% {
+    left: 10%;
+    top: 5%;
+  }
+  16% {
+    left: 70%;
+    top: 50%;
+  }
+  33% {
+    left: 25%;
+    top: 64%;
+  }
+  49% {
+    left: 35%;
+    top: 13%;
+  }
+  66% {
+    left: 87%;
+    top: 40%;
+  }
+  82% {
+    left: 58%;
+    top: 70%;
+  }
+}
+@-o-keyframes move {
+  0% {
+    left: 10%;
+    top: 5%;
+  }
+  16% {
+    left: 70%;
+    top: 50%;
+  }
+  33% {
+    left: 25%;
+    top: 64%;
+  }
+  49% {
+    left: 35%;
+    top: 13%;
+  }
+  66% {
+    left: 87%;
+    top: 40%;
+  }
+  82% {
+    left: 58%;
+    top: 70%;
+  }
+}
+@keyframes move {
+  0% {
+    left: 10%;
+    top: 5%;
+  }
+  16% {
+    left: 70%;
+    top: 50%;
+  }
+  33% {
+    left: 25%;
+    top: 64%;
+  }
+  49% {
+    left: 35%;
+    top: 13%;
+  }
+  66% {
+    left: 87%;
+    top: 40%;
+  }
+  82% {
+    left: 58%;
+    top: 70%;
+  }
+}
+
 
 
 .header {
@@ -190,6 +431,14 @@ button:hover {
 	padding: 12px 0;
 	font-size: 16px;
 	color: #000000;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.header-contacts-text input:hover, .header-contacts-text input:focus {
+	border-color: rgb(24, 99, 0);
 }
 .header-contacts-text input::-webkit-input-placeholder {color: rgb(154, 154, 154);}
 .header-contacts-text input::-moz-placeholder          {color: rgb(154, 154, 154);}/* Firefox 19+ */
@@ -209,6 +458,14 @@ button:hover {
 	border-radius: 7px;
 	border: 0;
 	padding: 10px 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.header-contacts-text button:hover {
+	background-color: #3bb514;
 }
 .header-phone {
 	display: inline-block;
@@ -252,6 +509,14 @@ button:hover {
 	font-size: 18px;
 	background-color: rgb(255, 199, 61);
 	font-family: 'UniSans-Regular';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.header-nav .nav-btn:hover {
+	background-color: #fdce5c;
 }
 
 .footer {
@@ -342,6 +607,8 @@ button:hover {
 	font-size: 16px;
 	color: #000000;
 	font-family: 'UniSans-Regular';
+	position: relative;
+	z-index: 10;
 }
 .footer-list-2 li a:hover {
 	text-decoration: underline;
@@ -353,6 +620,7 @@ button:hover {
 	padding: 5px;
 	text-align: center;
 	border-radius: 7px;
+	z-index: 0;
 }
 .footer-list-2 li .list-a:hover {
 	text-decoration: none;
@@ -382,6 +650,49 @@ button:hover {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 3px;
+}
+.footer-atk-logo .social-list li:hover img {
+	-webkit-animation: anim_icon 1s ease infinite;
+	-moz-animation: anim_icon 1s ease infinite;
+	-ms-animation: anim_icon 1s ease infinite;
+	-o-animation: anim_icon 1s ease infinite;
+	animation: anim_icon 1s ease infinite;
+}
+
+@-webkit-keyframes anim_icon {
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(30deg);}
+	30% {transform: rotate(-30deg);}
+	40% {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
+}
+@-moz-keyframes anim_icon {
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(30deg);}
+	30% {transform: rotate(-30deg);}
+	40% {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
+}
+@-ms-keyframes anim_icon {
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(30deg);}
+	30% {transform: rotate(-30deg);}
+	40% {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
+}
+@-o-keyframes anim_icon {
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(30deg);}
+	30% {transform: rotate(-30deg);}
+	40% {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
+}
+@keyframes anim_icon {
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(30deg);}
+	30% {transform: rotate(-30deg);}
+	40% {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
 }
 
 

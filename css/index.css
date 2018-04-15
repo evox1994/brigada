@@ -2,6 +2,7 @@
 	background-image: url("../i/b-1-back.jpg");
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	color: #ffffff;
 }
 .b-1 .b-block {
@@ -55,9 +56,19 @@
 	font-size: 16px;
 	color: #000000;
 	overflow-y: auto;
-	border: 0;
+	border: 1px solid transparent;
 	margin-bottom: 6px;
 	font-family: 'UniSans-Light';
+	position: relative;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-submit textarea:focus, .b-1-submit textarea:hover {
+	border: 1px solid rgb(24, 99, 0);
 }
 .b-1-submit textarea::-webkit-input-placeholder {color: #000000;}
 .b-1-submit textarea::-moz-placeholder          {color: #000000;}/* Firefox 19+ */
@@ -74,11 +85,21 @@
 	width: 100%;
 	border-radius: 3px;
 	margin-bottom: 6px;
-	border: 0;
+	border: 1px solid transparent;
 	text-align: center;
 	font-size: 16px;
 	color: #000000;
 	font-family: 'UniSans-Light';
+	position: relative;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-submit input:focus, .b-1-submit input:hover {
+	border: 1px solid rgb(24, 99, 0);
 }
 .b-1-submit input::-webkit-input-placeholder {color: #000000;}
 .b-1-submit input::-moz-placeholder          {color: #000000;}/* Firefox 19+ */
@@ -99,6 +120,9 @@
 	background-color: rgb(255, 199, 61);
 	margin-bottom: 8px;
 	font-family: 'UniSans-SemiBold';
+}
+.b-1-submit button:hover {
+	background-color: #fdce5c;
 }
 .b-1-submit .button-text {
 	font-size: 10px;
@@ -299,6 +323,7 @@
 	background-image: url("../i/b-4-back.jpg");
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	color: #ffffff;
 }
 .b-4 .b-block {
@@ -340,9 +365,19 @@
 	font-size: 16px;
 	color: #000000;
 	overflow-y: auto;
-	border: 0;
+	border: 1px solid transparent;
 	margin-bottom: 6px;
 	font-family: 'UniSans-Light';
+	position: relative;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4-submit textarea:focus, .b-4-submit textarea:hover {
+	border: 1px solid rgb(24, 99, 0);
 }
 .b-4-submit textarea::-webkit-input-placeholder {color: #000000;}
 .b-4-submit textarea::-moz-placeholder          {color: #000000;}/* Firefox 19+ */
@@ -359,11 +394,21 @@
 	width: 100%;
 	border-radius: 3px;
 	margin-bottom: 6px;
-	border: 0;
+	border: 1px solid transparent;
 	text-align: center;
 	font-size: 16px;
 	color: #000000;
 	font-family: 'UniSans-Light';
+	position: relative;
+	z-index: 10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4-submit input:focus, .b-4-submit input:hover {
+	border: 1px solid rgb(24, 99, 0);
 }
 .b-4-submit input::-webkit-input-placeholder {color: #000000;}
 .b-4-submit input::-moz-placeholder          {color: #000000;}/* Firefox 19+ */
