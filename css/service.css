@@ -554,6 +554,9 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.b-1 .b-block {
+		padding-top: 125px;
+	}
 	.b-2-list li {
 		padding: 168px 20px 20px;
 	}

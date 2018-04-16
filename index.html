@@ -33,7 +33,7 @@
 	<div class="b header">
 		<div class="b-block">
 			<div class="header-logo">
-				<a href="index.html"><img src="i/logo.png"></a>
+				<a href="index.html" class="anim-logo"><img src="i/logo.png"></a>
 				<div class="logo-text">Ремонтно-строительные работы любой сложности<br>в Анапе, Новороссийске и Геленджике</div>
 			</div>
 			<div class="header-contacts">
@@ -49,12 +49,25 @@
 			<div class="header-phone">
 				<a href="tel: +70000000000">+7 000 000 00 00</a>
 			</div>
+			<div class="mobile-btn">
+				<div class="mobile-btn-el"></div>
+			</div>
+			<div class="mobile-background"></div>
+			<div class="mobile-menu">
+				<ul class="mobile-list">
+					<li><a href="index.html">Главная.</a></li>
+					<li><a href="service.html">Услуги.</a></li>
+					<li><a href="gallery.html">Примеры работ</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="price-pred.html" class="nav-btn btn-anim">Предложить цену<span></span></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
 	<div class="b header-nav">
 		<div class="b-block clearfix">
-			<a href="#" class="nav-btn right btn-anim">Предложить цену<span></span></a>
+			<a href="#popup-order" class="nav-btn right btn-anim fancybox">Предложить цену<span></span></a>
 			<ul>
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="service.html">Услуги</a></li>
@@ -142,7 +155,7 @@
 				<li class="list-item-2">
 					<div class="li-caption">2. Выезд на объект</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					<a href="#">Предложить цену</a>
+					<a href="#popup-price" class="fancybox">Предложить цену</a>
 				</li>
 				<li class="list-item-3">
 					<div class="li-caption">3. Подсчет и утверждение сметы</div>
@@ -182,7 +195,7 @@
 	<div class="b footer">
 		<div class="b-block">
 			<div class="footer-logo">
-				<a href="index.html" class="logo-a"><img src="i/logo.png"></a>
+				<a href="index.html" class="logo-a anim-logo"><img src="i/logo.png"></a>
 				<div class="logo-text">sait.ru © 2018</div>
 				<ul>
 					<li>ООО</li>
@@ -228,6 +241,31 @@
 	</div>
 
 	<div style="display:none;">
+		<div class="popup" id="popup-price">
+			<div class="popup-submit">
+				<div class="submit-caption">Предложите свою цену и напишите объем работ</div>
+				<p>С Вами свяжется наш бригадир и подтвердит заказ</p>
+				<form>
+					<textarea placeholder="Опишите объём работ"></textarea>
+					<input type="tel" placeholder="Предложите цену">
+					<input type="tel" placeholder="Укажите контактный номер телефона">
+					<button type="submit" class="btn-anim">Отправить заказ<span></span></button>
+					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
+				</form>
+			</div>
+		</div>
+		<div class="popup" id="popup-order">
+			<div class="popup-submit">
+				<div class="submit-caption">Закажите замер</div>
+				<p>Мы перезвоним Вам в удобное время</p>
+				<form>
+					<input type="text" placeholder="Удобное время для связи: например, с 9 до 10">
+					<input type="tel" placeholder="Укажите контактный номер телефона">
+					<button type="submit" class="btn-anim">Отправить заказ<span></span></button>
+					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

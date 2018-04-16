@@ -54,6 +54,9 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.b-1 .b-block {
+		padding-top: 108px;
+	}
 	.contacts-list li img {
 		display: block;
 		margin: 0 auto 20px;

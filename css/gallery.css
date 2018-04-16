@@ -37,3 +37,8 @@
 		margin: 0 auto 30px;
 	}
 }
+@media screen and (max-width: 767px) {
+	.b-1 .b-block {
+		padding-top: 150px;
+	}
+}

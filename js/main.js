@@ -45,6 +45,31 @@ $(document).ready(function(){
         }
     });
 
+    $('.mobile-btn').click(function(){
+        if ( $(this).hasClass("active") ) {
+            $('.mobile-menu').animate({height: 0},300);
+            setTimeout(function(){
+                $('.mobile-menu').removeClass("active");
+                $('.mobile-btn').removeClass("active");
+                $('.mobile-background').removeClass("active");
+            }, 300);
+        } else {
+            $(this).addClass("active");
+            $('.mobile-background').addClass("active");
+            $('.mobile-menu').addClass("active");
+            $('.mobile-menu').animate({height: 220},300);
+        }
+    });
+
+    $('.mobile-background').click(function(){
+        $('.mobile-menu').animate({height: 0},300);
+        setTimeout(function(){
+            $('.mobile-menu').removeClass("active");
+            $('.mobile-btn').removeClass("active");
+            $('.mobile-background').removeClass("active");
+        }, 300);
+    });
+
     $('.fancybox').fancybox();
 
 });

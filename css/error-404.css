@@ -19,6 +19,6 @@
 
 @media screen and (max-width: 767px) {
 	.b-1 .b-block {
-		min-height: calc(100vh - 48px);
+		min-height: 100vh;
 	}
 }
