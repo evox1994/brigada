@@ -25,6 +25,7 @@
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/anim-script.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 
 </head>
@@ -41,7 +42,7 @@
 				<div class="header-contacts-text">
 					<p>Замеры каждый день с 8:00 до 21:00</p>
 					<form>
-						<input type="tel" placeholder="+7 000 000 00 00">
+						<input type="tel" class="phone-input" placeholder="+7 000 000 00 00">
 						<button type="submit">Заказать замер</button>
 					</form>
 				</div>
@@ -55,8 +56,8 @@
 			<div class="mobile-background"></div>
 			<div class="mobile-menu">
 				<ul class="mobile-list">
-					<li><a href="index.html">Главная.</a></li>
-					<li><a href="service.html">Услуги.</a></li>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="service.html">Услуги</a></li>
 					<li><a href="gallery.html">Примеры работ</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 					<li><a href="price-pred.html" class="nav-btn btn-anim">Предложить цену<span></span></a></li>
@@ -86,8 +87,8 @@
 				<div class="submit-caption"><span>Опишите работу, которую нужно сделать</span> и предложите свою цену с Вами свяжется наш бригадир и подтвердит заказ</div>
 				<form>
 					<textarea placeholder="Напишите работы, которые Вам нужно сделать"></textarea>
-					<input type="tel" placeholder="Предложите цену">
-					<input type="tel" placeholder="Укажите контактный номер телефона">
+					<div class="price-input"><input type="number" placeholder="Предложите цену"></div>
+					<input type="tel" class="phone-input" placeholder="Укажите контактный номер телефона">
 					<button type="submit" class="btn-anim">Отправить заказ<span></span></button>
 					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
 				</form>
@@ -100,16 +101,16 @@
 			<h2 class="second-caption">Какие преимущества Вы получаете от работы напрямую с бригадой?</h2>
 			<div class="b-2-slider">
 				<div class="b-2-slide">
-					<a href="i/b-2-slide-img.jpg" class="fancybox"><img src="i/b-2-slide-img.jpg"></a>
+					<a href="i/b-2-slide-img.jpg" data-fancybox="images" class="fancybox"><img src="i/b-2-slide-img.jpg"></a>
 				</div>
 				<div class="b-2-slide">
-					<a href="i/b-2-slide-img.jpg" class="fancybox"><img src="i/b-2-slide-img.jpg"></a>
+					<a href="i/b-2-slide-img.jpg" data-fancybox="images" class="fancybox"><img src="i/b-2-slide-img.jpg"></a>
 				</div>
 				<div class="b-2-slide">
-					<a href="i/b-2-slide-img.jpg" class="fancybox"><img src="i/b-2-slide-img.jpg"></a>
+					<a href="i/b-2-slide-img.jpg" data-fancybox="images" class="fancybox"><img src="i/b-2-slide-img.jpg"></a>
 				</div>
 				<div class="b-2-slide">
-					<a href="i/b-2-slide-img.jpg" class="fancybox"><img src="i/b-2-slide-img.jpg"></a>
+					<a href="i/b-2-slide-img.jpg" data-fancybox="images" class="fancybox"><img src="i/b-2-slide-img.jpg"></a>
 				</div>
 			</div>
 			<ul class="b-2-list anim-parent">
@@ -150,7 +151,7 @@
 				<li class="list-item-1">
 					<div class="li-caption">1. Заявка на сайте с Вашей ценой</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					<a href="#">Отправть заявку</a>
+					<a href="#">Отправить заявку</a>
 				</li>
 				<li class="list-item-2">
 					<div class="li-caption">2. Выезд на объект</div>
@@ -184,7 +185,7 @@
 				<div class="submit-caption"><span>Опишите работу, которую нужно сделать</span> и предложите свою цену с Вами свяжется наш бригадир и подтвердит заказ</div>
 				<form>
 					<textarea placeholder="Напишите работы, которые нужно сделать и какие у Вас есть вопросы"></textarea>
-					<input type="tel" placeholder="Укажите контактный номер телефона">
+					<input type="tel" class="phone-input" placeholder="Укажите контактный номер телефона">
 					<button type="submit" class="btn-anim">Задать вопрос<span></span></button>
 					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
 				</form>
@@ -221,7 +222,7 @@
 				<li><a href="service-more.html">Кровельные работы</a></li>
 				<li><a href="service-more.html">Сантехника</a></li>
 				<li><a href="service-more.html">Электрика</a></li>
-				<li><a href="#" class="list-a btn-anim">Предложить цену<span></span></a></li>
+				<li><a href="price-pred.html" class="list-a btn-anim">Предложить цену<span></span></a></li>
 			</ul>
 			<div class="footer-atk-logo">
 				<a href="#" class="atk-logo-a">
@@ -247,8 +248,8 @@
 				<p>С Вами свяжется наш бригадир и подтвердит заказ</p>
 				<form>
 					<textarea placeholder="Опишите объём работ"></textarea>
-					<input type="tel" placeholder="Предложите цену">
-					<input type="tel" placeholder="Укажите контактный номер телефона">
+					<div class="price-input"><input type="number" placeholder="Предложите цену"></div>
+					<input type="tel" class="phone-input" placeholder="Укажите контактный номер телефона">
 					<button type="submit" class="btn-anim">Отправить заказ<span></span></button>
 					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
 				</form>
@@ -260,7 +261,7 @@
 				<p>Мы перезвоним Вам в удобное время</p>
 				<form>
 					<input type="text" placeholder="Удобное время для связи: например, с 9 до 10">
-					<input type="tel" placeholder="Укажите контактный номер телефона">
+					<input type="tel" class="phone-input" placeholder="Укажите контактный номер телефона">
 					<button type="submit" class="btn-anim">Отправить заказ<span></span></button>
 					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
 				</form>

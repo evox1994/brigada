@@ -98,6 +98,20 @@
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+.b-1-submit .price-input {
+	position: relative;
+}
+.b-1-submit .price-input::before {
+	content: '';
+	position: absolute;
+	top: calc(50% - 10px);
+	right: 12px;
+	display: block;
+	width: 16px;
+	height: 20px;
+	background-image: url("../i/rub.png");
+	z-index: 11;
+}
 .b-1-submit input:focus, .b-1-submit input:hover {
 	border: 1px solid rgb(24, 99, 0);
 }
@@ -317,6 +331,14 @@
 	text-align: center;
 	font-size: 20px;
 	font-family: 'UniSans-Regular';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3-list li a:hover {
+	background-color: #fdce5c;
 }
 
 .b-4 {
@@ -426,9 +448,17 @@
 	border: 0;
 	font-size: 18px;
 	color: #ffffff;
-	background-color: rgb(255, 199, 61);
+	background-color: rgb(24, 99, 0);
 	margin-bottom: 8px;
 	font-family: 'UniSans-SemiBold';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4-submit button:hover {
+	background-color: rgb(49, 167, 11);
 }
 .b-4-submit .button-text {
 	font-size: 10px;
