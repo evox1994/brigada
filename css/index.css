@@ -182,9 +182,15 @@
 	left: 0;
 	background-image: url("../i/arr-prev.png");
 }
+.b-2-slider .slick-prev:hover {
+	background-image: url("../i/arr-prev-h.png");
+}
 .b-2-slider .slick-next {
 	right: 0;
 	background-image: url("../i/arr-next.png");
+}
+.b-2-slider .slick-next:hover {
+	background-image: url("../i/arr-next-h.png");
 }
 .b-2-list li {
 	display: inline-block;

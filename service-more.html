@@ -127,23 +127,23 @@
 			<ul>
 				<li>
 					<p>Разработка грунта механизированным способом<br>(с погрузкой)</p>
-					<a href="#" class="btn-anim">Предложить цену<span></span></a>
+					<a href="#popup-price" class="btn-anim fancybox">Предложить цену<span></span></a>
 				</li>
 				<li>
 					<p>Разработка грунта механизированным способом<br>(с погрузкой)</p>
-					<a href="#" class="btn-anim">Предложить цену<span></span></a>
+					<a href="#popup-price" class="btn-anim fancybox">Предложить цену<span></span></a>
 				</li>
 				<li>
 					<p>Разработка грунта вручную<br>(без крепления котлована)</p>
-					<a href="#" class="btn-anim">Предложить цену<span></span></a>
+					<a href="#popup-price" class="btn-anim fancybox">Предложить цену<span></span></a>
 				</li>
 				<li>
 					<p>Разработка грунта вручную<br>(с креплением котлована с глубиной до 3 метров)</p>
-					<a href="#" class="btn-anim">Предложить цену<span></span></a>
+					<a href="#popup-price" class="btn-anim fancybox">Предложить цену<span></span></a>
 				</li>
 				<li>
 					<p>Устройство щебеночных и песчаных оснований вручную<br>(с трамбованием и поливом водой)</p>
-					<a href="#" class="btn-anim">Предложить цену<span></span></a>
+					<a href="#popup-price" class="btn-anim fancybox">Предложить цену<span></span></a>
 				</li>
 			</ul>
 		</div>
@@ -156,7 +156,7 @@
 				<div class="submit-caption"><span>Опишите работу, которую нужно сделать</span> и предложите свою цену с Вами свяжется наш бригадир и подтвердит заказ</div>
 				<form>
 					<textarea placeholder="Напишите работы, которые нужно сделать и какие у Вас есть вопросы"></textarea>
-					<input type="tel" placeholder="Укажите контактный номер телефона">
+					<input type="tel" class="phone-input" placeholder="Укажите контактный номер телефона">
 					<button type="submit" class="btn-anim">Задать вопрос<span></span></button>
 					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
 				</form>
@@ -213,6 +213,31 @@
 	</div>
 
 	<div style="display:none;">
+		<div class="popup" id="popup-price">
+			<div class="popup-submit">
+				<div class="submit-caption">Предложите свою цену и напишите объем работ</div>
+				<p>С Вами свяжется наш бригадир и подтвердит заказ</p>
+				<form>
+					<textarea placeholder="Опишите объём работ"></textarea>
+					<div class="price-input"><input type="number" placeholder="Предложите цену"></div>
+					<input type="tel" class="phone-input" placeholder="Укажите контактный номер телефона">
+					<button type="submit" class="btn-anim">Отправить заказ<span></span></button>
+					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
+				</form>
+			</div>
+		</div>
+		<div class="popup" id="popup-order">
+			<div class="popup-submit">
+				<div class="submit-caption">Закажите замер</div>
+				<p>Мы перезвоним Вам в удобное время</p>
+				<form>
+					<input type="text" placeholder="Удобное время для связи: например, с 9 до 10">
+					<input type="tel" class="phone-input" placeholder="Укажите контактный номер телефона">
+					<button type="submit" class="btn-anim">Отправить заказ<span></span></button>
+					<div class="button-text">Отправляя заявку, Вы соглашаетесь с<br><a href="#" target="_blank">политикой конфиденциальности</a></div>
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
